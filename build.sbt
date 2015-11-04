@@ -1,7 +1,3 @@
-import SonatypeKeys._
-
-sonatypeSettings
-
 lazy val root = project.in(file(".")).
   enablePlugins(ScalaJSPlugin)
 
@@ -20,16 +16,13 @@ crossScalaVersions := Seq("2.10.4", "2.11.7")
 
 scalacOptions ++= Seq("-feature")
 
+skip in packageJSDependencies := false
 
 libraryDependencies ++= Seq(
   "org.querki" %%% "querki-jsext" % "0.5",
   "org.scala-js" %%% "scalajs-dom" % "0.8.0",
-  "org.querki" %%% "jquery-facade" % "0.6"
+  "org.querki" %%% "jquery-facade" % "0.8"
 )
-
-jsDependencies += "org.webjars" % "bootstrap" % "3.3.4" / "bootstrap.js" minified "bootstrap.min.js" dependsOn "jquery.js"
-
-jsDependencies += "org.webjars" % "bootstrap-datepicker" % "1.4.0" / "bootstrap-datepicker.js" minified "bootstrap-datepicker.min.js" dependsOn "bootstrap.js"
 
 jsDependencies in Test += RuntimeDOM
 

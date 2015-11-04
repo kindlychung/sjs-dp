@@ -5,19 +5,36 @@
     <title></title>
     <link href="web/css/bootstrap.min.css" rel="stylesheet">
     <link href="web/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 </head>
 <body>
 
-
-<div >
+<p id="math">x^2 + y^2</p>
+<div id="pickouter">
     <input id="pick" data-provide="datepicker" type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 </div>
-<script src="web/js/jquery-2.1.4.min.js"></script>
+<ul>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+</ul>
+<!--<script src="web/js/jquery-1.11.3.min.js"></script>-->
+<script src="target/scala-2.11/sjs-dp-fastopt.js"></script>
 <script src="web/js/bootstrap.min.js"></script>
 <script src="web/js/bootstrap-datepicker.min.js"></script>
-<script src="target/scala-2.11/sjs-dp-fastopt.js"></script>
 <script>
-    vu.co.kaiyin.sjsdp.Main().main()
+//    document.addEventListener("DOMContentLoaded", function(event) {
+//        //do work
+//        vu.co.kaiyin.sjsdp.Main().main()
+//
+//    });
+    $(function() {
+        vu.co.kaiyin.sjsdp.Main().main()
+    })
 </script>
 </body>
 </html>

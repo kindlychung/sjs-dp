@@ -1211,7 +1211,28 @@ $c_Lvu_co_kaiyin_sjsdp_Main$.prototype.main__V = (function() {
   var opt = new $c_Lvu_co_kaiyin_sjsdp_optbuilder_package$BootstrapDatepickerOptionBuilder().init___sci_Map($m_Lorg_querki_jsext_package$().noOpts$1);
   var jq = (0, $m_Lorg_querki_jquery_package$().$$$1)("#pick");
   var builder = $as_Lvu_co_kaiyin_sjsdp_optbuilder_package$BootstrapDatepickerOptionBuilder(opt.jsOpt__T__O__Lorg_querki_jsext_JSOptionBuilder("format", "dd/mm/yyyy"));
-  jq["datepicker"](builder.$$undresult__sjs_js_Object())
+  jq["datepicker"](builder.$$undresult__sjs_js_Object());
+  var tf = (function(f) {
+    return (function(arg1) {
+      return f.apply__O__O__O(this, arg1)
+    })
+  })(new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(e$2, i$2) {
+    $uI(i$2);
+    var this$4 = $m_s_Console$();
+    var this$5 = this$4.outVar$2;
+    $as_Ljava_io_PrintStream(this$5.tl$1.get__O()).println__O__V("adding index...");
+    var a = (0, $m_Lorg_querki_jquery_package$().$$$1)("#math");
+    return a
+  })));
+  var ulli = (0, $m_Lorg_querki_jquery_package$().$$$1)("ul li");
+  (0, $m_Lorg_querki_jquery_package$().$$$1)("ul li")["after"]("<p>hello</p>");
+  var this$16 = $m_s_Console$();
+  var this$17 = this$16.outVar$2;
+  $as_Ljava_io_PrintStream(this$17.tl$1.get__O()).println__O__V(ulli);
+  var this$19 = $m_s_Console$();
+  var this$20 = this$19.outVar$2;
+  $as_Ljava_io_PrintStream(this$20.tl$1.get__O()).println__O__V(tf);
+  ulli["after"](tf)
 });
 $c_Lvu_co_kaiyin_sjsdp_Main$.prototype.$$js$exported$meth$main__O = (function() {
   this.main__V()

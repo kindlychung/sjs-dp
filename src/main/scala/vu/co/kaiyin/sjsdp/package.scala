@@ -24,6 +24,6 @@ package object sjsdp {
     */
   implicit def jq2Datepicker(jq: JQuery): BootstrapDatepicker = jq.asInstanceOf[BootstrapDatepicker]
 
-  implicit def jq2DatepickerCommands(jq: JQuery) = new DatepickerCommands(jq)
+//  implicit def jq2DatepickerCommands(jq: JQuery) = new DatepickerCommands(jq)
 
 }

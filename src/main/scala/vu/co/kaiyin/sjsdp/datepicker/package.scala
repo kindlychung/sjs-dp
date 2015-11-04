@@ -27,7 +27,7 @@ package object datepicker {
     def datepickerInternal(cmd: String, params: js.Any*): Any = js.native
   }
 
-  class DatepickerCommands(dp: BootstrapDatepicker) {
+  implicit class DatepickerCommands(dp: BootstrapDatepicker) {
 
     def command(cmd: String, params: js.Any*) = dp.datepickerInternal(cmd, params: _*)
 
